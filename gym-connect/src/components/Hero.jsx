@@ -13,7 +13,9 @@ export default function Hero() {
         <p className='text-sm md:text-base font-light'>
             By proceeding, I acknowledge that I might become <span className='text-blue-400 font-medium'>immensely powerful</span> and accept the challenge of transforming into a <span className='text-blue-400 font-medium'>fitness titan</span>. I understand that my journey may lead to unparalleled strength and a presence that demands attention.
         </p>
-        <Button text={'Accept & Begin'}></Button>
+        <Button func={() => {
+            window.location.href = '#generate'
+        }}text={'Accept & Begin'}></Button>
     </div>
   )
 }
